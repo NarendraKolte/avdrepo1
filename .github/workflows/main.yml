@@ -3,9 +3,12 @@
 name : Employee Pipeline
 
 # set trigger
-on : 
+on :
+  push:
+    branches:
+      - main
   workflow_dispatch:
-    
+
 
 # set jobs
 jobs:
