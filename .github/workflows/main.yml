@@ -1,1 +1,21 @@
+# name of the pipleine
 
+name : Employee Pipeline
+
+# set trigger
+on : 
+
+  push:
+    branches:
+      - main
+
+# set jobs
+jobs:
+    print-message:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print message
+              run: echo "Hello, this is the Employee Pipeline!"
+              
+            - name: Print message
+              run: echo "Hello, this is second job in Employee Pipeline!"
